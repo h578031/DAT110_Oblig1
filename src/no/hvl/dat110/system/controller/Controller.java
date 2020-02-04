@@ -50,8 +50,6 @@ public class Controller  {
 			
 		}
 		
-		
-		
 		stopdisplay.stop();
 		stopsensor.stop();
 	

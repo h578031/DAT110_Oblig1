@@ -52,17 +52,10 @@ public class RPCServer {
 			data = rpc.invoke(data);
 			connection.send(new Message(data));
 			
-			
-		
-		   /*if (true) {
-			   throw new UnsupportedOperationException(TODO.method());
-		   }*/
-		   
 		   if (rpcid == RPCCommon.RPIDSTOP) {
 			   stop = true;
 		   }
 		}
-	
 	}
 	
 	public void register(int rpcid, RPCImpl impl) {

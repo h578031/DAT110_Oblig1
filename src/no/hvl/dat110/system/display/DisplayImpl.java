@@ -23,7 +23,6 @@ public class DisplayImpl implements RPCImpl {
 		write(message);
 		reply = RPCUtils.marshallString(rpcid, message);
 		
-		
 		return reply;
 	}
 }

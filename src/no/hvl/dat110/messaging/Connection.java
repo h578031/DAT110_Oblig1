@@ -42,7 +42,6 @@ public class Connection {
 			outStream.write(message.encapsulate());
 		} catch (IOException e) {
 			e.printStackTrace();
-			System.out.println("Feil i send()");
 		}
 	}
 
@@ -55,14 +54,10 @@ public class Connection {
 		// read a segment (128 bytes) from the input stream and decapsulate into message
 		// Hint: create a new Message object and use the decapsulate method
 		
-		/*if (true) {
-			throw new RuntimeException("not yet implemented");
-		}*/
 		try {
 			inStream.read(recvbuf,0, MessageConfig.SEGMENTSIZE);
 		} catch (IOException e) {
 			e.printStackTrace();
-			System.out.println("Feil i recieve()");
 		}
 		message.decapsulate(recvbuf);
 

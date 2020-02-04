@@ -24,10 +24,6 @@ public class RPCUtils {
 
 		// TODO: marshall RPC identifier and string into byte array
 		
-		/*if (true) {
-			throw new UnsupportedOperationException(TODO.method());
-		}*/
-
 		return encoded;
 	}
 
@@ -42,12 +38,6 @@ public class RPCUtils {
 
 		// TODO: unmarshall String contained in data into decoded
 		
-		
-
-		/*if (true) {
-			throw new UnsupportedOperationException(TODO.method());
-		}*/
-
 		return decoded;
 	}
 
@@ -58,7 +48,6 @@ public class RPCUtils {
 
 		// TODO: marshall RPC identifier in case of void type
 		return encoded;
-
 	}
 
 	public static void unmarshallVoid(byte[] data) {
